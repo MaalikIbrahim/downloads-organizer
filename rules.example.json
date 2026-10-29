@@ -1,0 +1,18 @@
+{
+  "overrides": {
+    "IMG_0001.jpg": "Projects\\Site Visit Photos"
+  },
+  "rules": [
+    { "pattern": "invoice|receipt|statement", "folder": "Finance\\Invoices and Receipts" },
+    { "pattern": "pay ?stub|payroll|(^|[^a-z])t4([^a-z]|$)|notice of assessment", "folder": "Finance\\Payroll and Tax" },
+    { "pattern": "^WI-\\d{4}|work instruction|sop|runbook", "folder": "Knowledge Base" },
+    { "pattern": "planogram", "folder": "Projects\\Planograms" },
+    { "pattern": "ticket|service call|incident|(^|[^a-z])[a-z]{2,5}-\\d+([^a-z]|$)", "folder": "Support\\Tickets and Service Calls" },
+    { "pattern": "outage|postmortem", "folder": "Support\\Outage Reviews" },
+    { "pattern": "usage|telemetry|_export|report", "folder": "Data\\Reports and Exports" },
+    { "pattern": "^\\d{8}_\\d{6}.*\\.(jpe?g|png|heic|mp4|mov)$", "folder": "Media\\Phone Photos and Videos" },
+    { "pattern": "^(IMG|VID|AUD|PTT|DOC)-\\d{8}-WA\\d+|whatsapp", "folder": "Media\\WhatsApp" },
+    { "pattern": "screenshot|^screen ?shot", "folder": "Media\\Screenshots" },
+    { "pattern": "\\.(exe|msi|msix|msixbundle|appx|appxbundle)$", "folder": "Installers" }
+  ]
+}
